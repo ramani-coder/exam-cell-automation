@@ -14,8 +14,8 @@
        border-style: solid;
        align-content: center;
        text-align: center;
-       width: 500px;
-       height: 660px;
+       width: 300px;
+       height: 500px;
        color:rgb(218, 218, 218)smoke;
   background-color: rgba(121, 53, 5,0.5);
 
@@ -34,7 +34,7 @@
     -moz-border-radius: 4px;
     border-radius: 10px;
     font-size: 20px;
-    height:70px;
+    height:40px;
     }
     .row {
     padding: 10px 0;
@@ -44,7 +44,7 @@ h2 {
   color: rgb(218, 218, 218);
   text-align: left ;
   margin-left: 70px;
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 400 !important;
 
 }
@@ -54,6 +54,15 @@ h2 {
 }
 a{
     color:thistle;
+}
+button{
+    background-color: #af6000 !important;
+    border-color: #af6000 !important; 
+    height: 30px;
+    width:70px;  
+    float: bottom right;
+
+    
 }
 #fm1 .row input[type=text],
     #fm1 .row input[type=password] { width: 80%; padding: 10px;
@@ -69,7 +78,7 @@ a{
   background-color: #faffaf63;
   border-color: #F1F3F8;
   color: #ffffff;
-  height: 50px;
+  height: 40px;
   width: 100%;
   
   
@@ -80,50 +89,45 @@ a{
 }
 
 button{
-    height: 50px;
-    width:100px;
+   
 }
 
 </style>
 </head>
 <body style="background-image: url(https://images2.alphacoders.com/261/thumb-1920-26102.jpg);">
-    <button style="float: right;">Admin</button><button style="float: right;">Register</button><p style="text-align:right;color:#ffffff;margin-right:240px;font-size:40px;">Not a student??<BR></p>
+    
 <div class="box" id="login">
 
     <form id="fm1" action="/cas/login?service=https%3A%2F%2Faumscb.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp%3Ftask%3Doff" method="post">
 
         
 
-        <h2>Student <br> Login</h2>
-        <br>
-    <br>
-    
+        <h2>Student <br> Login</h2><br>
+        
 
         <section class="row">
                     
                     <input class="form-control form-control-solid" id="username" type="text" placeholder="Username" name="username" required/>
                 
          </section>
-    <br>
-    <br>
+    
     
 
         <section class="row">
         
                   <input class="form-control form-control-solid" type="password" id="password" placeholder="Password" name="password" required/>
 </section>
-<br>
-    <br>
+<br> <br>
     
         <section class="row btn-row">
            
      
-            <input class="btn-submit" name="submit"value="LOGIN"  type="submit" />
-         </section>   
+            <input style="font-size: 20px;" class="btn-submit" name="submit"value="Login"  type="submit" />
+         </section>  
          
-         <p style="color:#ffffff">BACK TO <a href="" >MAIN PAGE</a></p><br><br>
+         <p style="color:#ffffff;font-size: 15px;">BACK TO <a href="" >MAIN PAGE</a></p>
         
-    </form>
-
+    </form></div>
+    <button style="float: right;">Admin</button><button style="float: right;margin-right: 10px;">Register</button><p style="text-align:right;color:#ffffff;margin-right:180px;font-size:20px;">Not a student??<BR></p>
 </body>
 </html>
