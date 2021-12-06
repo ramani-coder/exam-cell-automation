@@ -6,51 +6,67 @@
  <link rel="icon" href="https://www.freeiconspng.com/uploads/study-icon-21.png"/>
 <style>
     .box{
-       background-color: #7c7c7c;
-       border: #f8971d 5px;
+       
+       border: #af6000 3px;
        border-radius: 10px;
        border-style: solid;
        align-content: center;
        text-align: center;
        width: 500px;
+       height: 650px;
+       color:rgb(218, 218, 218)smoke;
   
-  margin: 0;
+
   position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
     }
     .btn-submit {
-    background-color: #f8971d !important;
-    border-color: #a55f1f !important;
-    border: 0;
-    padding: 10px 20px;
-    font-weight: bold;
-    color: white;
+    background-color: #af6000 !important;
+    border-color: #af6000 !important;    
+    color: rgb(218, 218, 218);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;
+    border-radius: 10px;
+    font-size: 20px;
+    height:70px;
     }
     .row {
     padding: 10px 0;
     
 }
 h2 {
-  color: #F8951B;
-  text-align: center;
-  font-size: 28px;
+  color: rgb(218, 218, 218);
+  text-align: left ;
+  margin-left: 70px;
+  font-size: 70px;
   font-weight: 400 !important;
 
 }
+::placeholder {
+  color: rgb(218, 218, 218);
+  text-decoration-style: none;
+}
+a{
+    color:thistle;
+}
 #fm1 .row input[type=text],
-    #fm1 .row input[type=password] { width: 80%; padding: 10px; alignment-adjust:centerline; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
-    #fm1 .row .btn-submit { outline: none; -webkit-appearance: none; -webkit-border-radius: 0; border: 0; background: #70ba61; color: white; font-weight: bold; width: 80%; padding: 10px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+    #fm1 .row input[type=password] { width: 80%; padding: 10px;
+         alignment-adjust:centerline; box-sizing: border-box;
+          -webkit-box-sizing: border-box; -moz-box-sizing:
+           border-box; }
+    #fm1 .row .btn-submit { outline: none; -webkit-appearance: none;
+         -webkit-border-radius: 0; border: 0; background: #70ba61;
+          color: rgb(218, 218, 218); font-weight: bold;
+         width: 80%; padding: 10px 10px; -webkit-border-radius: 3px;
+          -moz-border-radius: 3px; border-radius: 3px; }
     .form-control.form-control-solid {
   background-color: #faffaf63;
   border-color: #F1F3F8;
-  color: #A6B2BA;
-  height: 43px;
+  color: #ffffff;
+  height: 50px;
   width: 100%;
   
   
@@ -60,36 +76,50 @@ h2 {
   background-color: rgb(245, 255, 255);
 }
 
+button{
+    height: 50px;
+    width:100px;
+}
+
 </style>
 </head>
 <body style="background-image: url(https://images2.alphacoders.com/261/thumb-1920-26102.jpg);">
-
+    <button style="float: right;">Admin</button><button style="float: right;">Register</button><p style="text-align:right;color:#ffffff;margin-right:240px;font-size:40px;">not a student??</p>
 <div class="box" id="login">
+
     <form id="fm1" action="/cas/login?service=https%3A%2F%2Faumscb.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp%3Ftask%3Doff" method="post">
 
         
 
-        <h2>Student Login</h2>
+        <h2>Student <br> Login</h2>
+        <br>
+    <br>
+    
 
         <section class="row">
                     
                     <input class="form-control form-control-solid" id="username" type="text" placeholder="Username" name="username" required/>
                 
-            
-        </section>
-        
+         </section>
+    <br>
+    <br>
+    
 
         <section class="row">
         
                   <input class="form-control form-control-solid" type="password" id="password" placeholder="Password" name="password" required/>
-
+</section>
+<br>
+    <br>
+    
         <section class="row btn-row">
            
      
             <input class="btn-submit" name="submit"value="LOGIN"  type="submit" />
+         </section>   
+         
+         <p style="color:#ffffff">Wanna go back to our <a href="" >Main page</a></p>
         
-
-        </section>
     </form>
 
 </body>
