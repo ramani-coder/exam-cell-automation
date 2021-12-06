@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>EXAM CELL AUTOMATION</title>
+ <link rel="icon" href="https://www.freeiconspng.com/uploads/study-icon-21.png"/>
+<style>
+    .box{
+       background-color: #7c7c7c;
+       border: #f8971d 5px;
+       border-radius: 10px;
+       border-style: solid;
+       align-content: center;
+       text-align: center;
+       width: 500px;
+  
+  margin: 0;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    }
+    .btn-submit {
+    background-color: #f8971d !important;
+    border-color: #a55f1f !important;
+    border: 0;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    }
+    .row {
+    padding: 10px 0;
+    
+}
+h2 {
+  color: #F8951B;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400 !important;
+
+}
+#fm1 .row input[type=text],
+    #fm1 .row input[type=password] { width: 80%; padding: 10px; alignment-adjust:centerline; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+    #fm1 .row .btn-submit { outline: none; -webkit-appearance: none; -webkit-border-radius: 0; border: 0; background: #70ba61; color: white; font-weight: bold; width: 80%; padding: 10px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+    .form-control.form-control-solid {
+  background-color: #faffaf63;
+  border-color: #F1F3F8;
+  color: #A6B2BA;
+  height: 43px;
+  width: 100%;
+  
+  
+}
+.form-control.form-control-solid:focus {
+  border-color: #7094f0;
+  background-color: rgb(245, 255, 255);
+}
+
+</style>
+</head>
+<body style="background-image: url(https://images2.alphacoders.com/261/thumb-1920-26102.jpg);">
+
+<div class="box" id="login">
+    <form id="fm1" action="/cas/login?service=https%3A%2F%2Faumscb.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp%3Ftask%3Doff" method="post">
+
+        
+
+        <h2>Student Login</h2>
+
+        <section class="row">
+                    
+                    <input class="form-control form-control-solid" id="username" type="text" placeholder="Username" name="username" required/>
+                
+            
+        </section>
+        
+
+        <section class="row">
+        
+                  <input class="form-control form-control-solid" type="password" id="password" placeholder="Password" name="password" required/>
+
+        <section class="row btn-row">
+           
+     
+            <input class="btn-submit" name="submit"value="LOGIN"  type="submit" />
+        
+
+        </section>
+    </form>
+
+</body>
+</html>
